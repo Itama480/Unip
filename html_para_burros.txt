@@ -1,0 +1,194 @@
+Html
+
+Para todo comeco de codigo devemos primeiramente construir o corpo do nosso site.
+No comeco deve-se declarar a tag.
+<!DOCTYPE html>
+Ela e quem vai declarar o tipo do seu codigo que no caso sera html.
+Para a continuacao do codigo deve se montar o corpo do site:
+<html>
+<head>
+ 
+    <title>Página completa</title>
+    <meta charset="UTF-8">
+ 
+</head>
+ <!-- Corpo do site -->
+<body>
+ 
+    <!-- Cabeçalho -->
+    <header>
+ 
+        <nav></nav>
+ 
+    </header>
+ 
+    <!-- Conteúdo -->
+    <div>
+ 
+        <article>
+            <section></section>
+        </article>
+        
+        <aside></aside>
+ 
+    </div>
+ 
+    <!-- Rodapé -->
+    <footer></footer>
+ 
+</body>
+ 
+</html>
+
+Dentro da linguagem html temos as chamadas tags sendo os comandos que vem dentro: < > (tag inicial) e uma tag de finalização  </ > (tag de finalização).
+
+
+    <p>Pula um paragrafo</p>
+    <b>Texto em negrito</b>
+    <i>Texto em itálico</i>
+    <u>Texto sublinhado</u>
+    <sub>Texto subscrito</sub>
+    <sup>Texto sobrescrito</sup>
+    <big>Texto com fonte maior do que o padrão</big>
+    <small>Texto com fonte menor do que o padrão</small>
+    <em>Texto em itálico</em>
+    <strong>Texto em negrito</strong>
+    <br>É usado para quebra de linha, nao precisa de uma tag de finalização
+    <--! É usado para comentar códigos(nao aparece no site apenas no código -->
+
+Podemos ainda alterar a fonte usando o atributo style e a propriedade font-family:
+
+<!-- Declarando uma única fonte -->
+<p style="font-family: 'Times New Roman'">Olá, mundo!</p>
+ 
+<!-- Declarando duas possíveis fontes -->
+<p style="font-family: 'Helvetica, Arial'">Olá, mundo novamente!</p>
+
+
+No exemplo a seguir vamos demonstrar como alterar a cor de um texto:
+
+<style>
+p { color: red; }
+</style>
+Esse exemplo aplica a cor vermelha a todos os elementos do tipo parágrafo.
+
+Podemos ainda aplicar cores ao fundo. Observe o exemplo a seguir:
+
+<style>
+body { background-color: red; }
+</style>
+
+Imagens
+ 
+No exemplo a seguir vamos demonstar como inserir uma imagem ao codigo:
+<body>
+	
+	<img src="fpx.png" height="600px">
+
+</body>
+Lembrando sempre que voce tem sempre que mostrar aonde a imagem esta, por isso e 
+mais facil colocarmos a imagem no mesmo diretorio do nosso site(mesma pasta)
+
+Linhas horizontais
+
+Podemos adicionar linhas horizontais usando a tag <hr>.
+
+<hr> 
+
+Listas
+
+Listas podem ser criadas usando a tag <ul> (listas não ordenadas) ou <ol> (listas ordenadas) e cada elemento pode ser inserido com a tag <li>.
+<ul> - pode se usar numeros e letras para cada elemento da lista
+<ol> - pode se usar discos circulos e quadrados para cada elemento da lista
+
+Links
+
+No exemplo a seguir vamos demonstar como inserir um link ao codigo:
+	<a href="http://facebook.com">facebook</a>
+	<a href="pagina2.html">2</a>
+lembrando sempre que voce deve referenciar o site 
+
+Tabelas
+
+Podemos criar tabelas usando a tag <table>. 
+
+Cada linha deve ser declarada com a tag <tr> e cada célula com a tag <td>. 
+
+Opcionalmente podemos usar a tag <th> para declarar células que representem a linha de cabeçalho.
+
+Formularios
+
+Formularios servem para mandar determinados dados para uma determinada pagina. 
+
+
+<body>
+	<form action="processa.php" method="get">
+
+
+Tipos de input
+
+Input é o comando que é usado para entrada de dados
+
+Existem varios types para se usado no input sendo eles
+
+text = caixa de texto em texto
+<input type="text" name="texto1" placeholder="input do tipo text">
+
+password = caixa de texto em senha
+<input type="password" name="texto1" placeholder="input do tipo text">	
+
+hidden = some com tudo
+<input type="hidden" name="oculto" value="oculto">
+
+select = abre um menu para selecionar uma opcao
+<select name="selecao">
+		<option value="1">opcao 1</option>
+		<option value="2">opcao 2</option>
+
+radio = botao so um pode ser selecionado
+<label>radio</label>
+		<input type="radio" name="radio" value="1">valor1
+		<br>
+		<input type="radio" name="radio" value="2">valor 2
+
+checkbox = opcoes com caixinhas pode selecionar varias
+<label>checkbox</label>
+		<input type="checkbox" name="1" value="1">valor 1 <br>
+		<input type="checkbox" name="1" value="2">valor 2 <br>
+		<input type="checkbox" name="1" value="3">valor 3 <br>
+
+submit = botao de enviar dados
+<input type="submit" value="enviar" name="submit" >
+
+placeholder = O placeholder aloca um espaço para você poder escrever e enviar dados
+
+
+Alterando as cores
+<style> cores </style>
+Você pode alterar as cores de seu texto e de sua página com a tag <style>.
+
+Para isso devemos aplicar as chamadas propriedades:
+
+color: altera a cor do texto
+
+background-color: altera a cor de fundo
+Para isso, você deve adicionar o nome da cor em inglês ou o código RGB. Por exemplo:
+
+<html>
+<head>
+<style>
+    body{
+        color: red;
+        background-color:#FFFFFF;
+    }
+</style>
+</head>
+<body>
+Olá mundo!
+</body>
+</html>
+
+
+
+
+
